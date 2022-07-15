@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- top navbar -->
+    <div class="navbar">
+        <div class="leftbar">
+            <h2>DojoWeather</h2>
+        </div>
+        <div class="rightbar">
+            <a href="#" onclick="alert('Loading weather report...')">Burbank</a>
+            <a href="#" onclick="alert('Loading weather report...')">Chicago</a>
+            <a href="#" onclick="alert('Loading weather report...')">Dallas</a>
+        </div>
+    </div>
+    <!-- main content container -->
+    <div class="container">
+        <!-- top row division -->
+        <div class="locationbar">
+            <h1>San Jose</h1>
+            <p>Show temperature in: <select name="temps" id="t_choice" onchange="updateTemperature(this)">
+                <option value="C">°C</option>
+                <option value="F">°F</option>
+            </select></p>
+        </div>
+        <!-- middle row division -->
+        <div class="weatherbar">
+            <!-- weather panel -->
+            <div class="panel">
+                <div class="header">
+                    <h3>Today</h3>
+                    <img src="./assets/some_rain.png" alt="rain clouds">
+                    <p>some rain</p>
+                </div>
+                <div class="temps">
+                    <p class="high">24°</p>
+                    <p class="low">18°</p>
+                </div>
+            </div>
+            <!-- weather panel -->
+            <div class="panel">
+                <div class="header">                    
+                    <h3>Tomorrow</h3>
+                    <img src="./assets/some_sun.png" alt="sun">
+                    <p>some sun</p>
+                </div>
+                <div class="temps">
+                    <p class="high">27°</p>
+                    <p class="low">19°</p>
+                </div>
+            </div>
+            <!-- weather panel -->
+            <div class="panel">
+                <div class="header">
+                    <h3>Friday</h3>
+                    <img src="./assets/some_clouds.png" alt="clouds">
+                    <p>some clouds</p>
+                </div>
+                <div class="temps">
+                    <p class="high">21°</p>
+                    <p class="low">16°</p>
+                </div>
+            </div>
+            <!-- weather panel -->
+            <div class="panel">
+                <div class="header">
+                    <h3>Saturday</h3>
+                    <img src="./assets/some_sun.png" alt="sun">
+                    <p>some sun</p>
+                </div>
+                <div class="temps">
+                    <p class="high">26°</p>
+                    <p class="low">21°</p>
+                </div>
+            </div>
+        </div>
+        <!-- bottom row division -->
+        <div class="cookiepopup">
+            <div class="left">
+                <img src="./assets/cookie.png" alt="cookie">
+            </div>
+            <div class="middle">
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <div class="right">
+                <button class="btn" onclick="this.parentElement.parentElement.remove()">I Accept</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
