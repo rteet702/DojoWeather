@@ -102,9 +102,12 @@
     width: 70vw;
 
     border: solid 5px black;
+    background-color: white;
 
     display: flex;
     align-items: center;
+
+    position: fixed;
 }
 
 .left, .middle, .right {
